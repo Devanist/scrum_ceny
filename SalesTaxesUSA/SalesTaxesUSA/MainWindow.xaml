@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesTaxesUSA"
         mc:Ignorable="d"
-        Title="SaleTaxesUSA" Height="350" Width="525">
-    <Grid>
-        
+        Title="SaleTaxesUSA" Height="304.902" Width="525">
+    <Grid Height="274" VerticalAlignment="Top">
+        <ComboBox x:Name="productComboBox" HorizontalAlignment="Left" Margin="26,80,0,0" VerticalAlignment="Top" Width="174"/>
+        <ComboBox x:Name="stateComboBox" HorizontalAlignment="Left" Margin="26,192,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label" Content="Product" HorizontalAlignment="Left" Margin="26,49,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label1" Content="State" HorizontalAlignment="Left" Margin="26,161,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label2" Content="Category:" HorizontalAlignment="Left" Margin="262,49,0,0" VerticalAlignment="Top" Width="66"/>
+        <Label x:Name="categoryLabel" Content="n/a" HorizontalAlignment="Left" Margin="395,49,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label x:Name="label4" Content="Product base price:" HorizontalAlignment="Left" Margin="262,97,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="basePriceTextBox" HorizontalAlignment="Left" Height="23" Margin="395,100,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="98"/>
+        <Label x:Name="label5" Content="Tax:" HorizontalAlignment="Left" Margin="262,143,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="taxLabel" Content="n/a" HorizontalAlignment="Left" Margin="395,143,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7" Content="Product final price:" HorizontalAlignment="Left" Margin="262,196,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="finalPriceTextBox" HorizontalAlignment="Left" Height="23" Margin="395,200,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="98"/>
+
     </Grid>
 </Window>
