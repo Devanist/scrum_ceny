@@ -1,0 +1,2 @@
+SalesTaxesUSA/obj/Debug/**
+SalesTaxesUSA/bin/Debug/**
