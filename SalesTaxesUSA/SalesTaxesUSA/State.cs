@@ -8,7 +8,15 @@ namespace SalesTaxesUSA
 {
     class State
     {
-        String name;
-        float baseTax;
+        String name { get; set; }
+        float baseTax { get; set; }
+
+        public State(String name, float baseTax)
+        {
+            this.name = name;
+            this.baseTax = baseTax;
+        }
     }
+
+
 }
