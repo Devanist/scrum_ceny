@@ -84,7 +84,7 @@ namespace SalesTaxesUSA
 
         private void finalPriceTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            basePriceTextBox.Text = calculatePrice(-1, finalPrice, baseTax, categoryTax).ToString();
+            basePriceTextBox.Text = calculatePrice(-1, Convert.ToDouble( finalPriceTextBox.Text ), baseTax, categoryTax).ToString();
         }
     }
 }
