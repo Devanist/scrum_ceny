@@ -72,6 +72,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Product.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="ProductCategory.cs" />
+>>>>>>> 93d14248a282ff5380d505dbc79a1c1125dc6614
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
