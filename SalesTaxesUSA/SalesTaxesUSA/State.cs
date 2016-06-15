@@ -9,7 +9,7 @@ namespace SalesTaxesUSA
     class State
     {
         String name { get; set; }
-        float baseTax { get; set; }
+        double baseTax { get; set; }
 
         public State(String name, double baseTax)
         {
