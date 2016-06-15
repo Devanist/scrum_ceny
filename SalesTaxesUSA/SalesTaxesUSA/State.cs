@@ -8,7 +8,7 @@ namespace SalesTaxesUSA
 {
     class State
     {
-        String name { get; set; }
+        public String name { get; set; }
         double baseTax { get; set; }
 
         public State(String name, double baseTax)

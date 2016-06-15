@@ -49,6 +49,16 @@ namespace SalesTaxesUSA
             productList.Add(new Product(7, "Nospa", 6, -1));
             productList.Add(new Product(8, "Pierogi", 5, -1));
             productList.Add(new Product(9, "Witaminex", 30, -1));
+
+            foreach(var element in stateList)
+            {
+                stateComboBox.Items.Add(element.name);
+            }
+
+            foreach(var element in productList)
+            {
+                productComboBox.Items.Add(element.name);
+            }
         }
 
         /**
