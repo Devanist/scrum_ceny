@@ -8,11 +8,19 @@ namespace SalesTaxesUSA
 {
     class Product
     {
-        int id;
-        String name;
-        float basePrice;
-        float endPrice;
-        ProductCategory productCategory;
+        int id { get; set; }
+        String name { get; set; }
+        float basePrice { get; set; }
+        float endPrice { get; set; }
+        ProductCategory productCategory { get; set; }
+
+        public Product(int id, String name, float basePrice, float endPrice)
+        {
+            this.id = id;
+            this.name = name;
+            this.basePrice = basePrice;
+            this.endPrice = endPrice;
+        }
 
     }
 }
