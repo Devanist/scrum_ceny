@@ -10,7 +10,7 @@ namespace SalesTaxesUSA
     {
         int id { get; set; }
         public String name { get; set; }
-        float basePrice { get; set; }
+        public float basePrice { get; set; }
         float endPrice { get; set; }
         //ProductCategory productCategory { get; set; }
 

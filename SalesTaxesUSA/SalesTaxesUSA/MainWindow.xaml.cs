@@ -20,10 +20,10 @@ namespace SalesTaxesUSA
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Product> productList = new List<Product>();
         public MainWindow()
         {
             InitializeComponent();
-            List<Product> productList = new List<Product>();
             List<State> stateList = new List<State>();
             //ProductCategory productCategory = new ProductCategory();
             //productCategory.
@@ -82,5 +82,19 @@ namespace SalesTaxesUSA
 
         }
 
+        private void productComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Product product;
+            product = productList[1];
+            foreach (var element in productList)
+            {
+                if(productComboBox.SelectedValue == element.name)
+                {
+                    product = element;
+                }
+                //stateComboBox.Items.Add(element.name);
+            }
+            basePriceTextBox.Text = product.basePrice.ToString();
+        }
     }
 }

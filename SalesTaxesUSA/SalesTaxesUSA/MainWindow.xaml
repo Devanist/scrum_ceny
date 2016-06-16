@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SaleTaxesUSA" Height="304.902" Width="525">
     <Grid Height="274" VerticalAlignment="Top">
-        <ComboBox x:Name="productComboBox" HorizontalAlignment="Left" Margin="26,80,0,0" VerticalAlignment="Top" Width="174"/>
+        <ComboBox x:Name="productComboBox" HorizontalAlignment="Left" Margin="26,80,0,0" VerticalAlignment="Top" Width="174" SelectionChanged="productComboBox_SelectionChanged"/>
         <ComboBox x:Name="stateComboBox" HorizontalAlignment="Left" Margin="26,192,0,0" VerticalAlignment="Top" Width="174"/>
         <Label x:Name="label" Content="Product" HorizontalAlignment="Left" Margin="26,49,0,0" VerticalAlignment="Top" Width="174"/>
         <Label x:Name="label1" Content="State" HorizontalAlignment="Left" Margin="26,161,0,0" VerticalAlignment="Top" Width="174"/>
