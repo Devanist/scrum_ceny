@@ -61,11 +61,11 @@ namespace SalesTaxesUSA
 
             if (basePrice != -1)
             {
-                calculatedPrice = basePrice * (baseTax + categoryTax);
+                calculatedPrice = basePrice * ( 1 + baseTax + categoryTax);
             }
             else if (finalPrice != -1)
             {
-                calculatedPrice = finalPrice / (baseTax + categoryTax);
+                calculatedPrice = finalPrice / (1 + baseTax + categoryTax);
             }
 
             return calculatedPrice;
