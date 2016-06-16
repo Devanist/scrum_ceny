@@ -11,7 +11,7 @@ namespace SalesTaxesUSA
         String name { get; set; }
         float baseTax { get; set; }
 
-        public State(String name, float baseTax)
+        public State(String name, double baseTax)
         {
             this.name = name;
             this.baseTax = baseTax;

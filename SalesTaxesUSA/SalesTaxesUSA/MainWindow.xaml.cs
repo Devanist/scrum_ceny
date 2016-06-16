@@ -25,19 +25,30 @@ namespace SalesTaxesUSA
             InitializeComponent();
             List<Product> productList = new List<Product>();
             List<State> stateList = new List<State>();
-            ProductCategory productCategory = new ProductCategory();
+            //ProductCategory productCategory = new ProductCategory();
+            //productCategory.
 
-            stateList.Add(new State("Alaska", 0.5));
-            stateList.Add(new State("California", 0.5));
-            stateList.Add(new State("Kentucky", 0.5));
-            stateList.Add(new State("Maine", 0.5));
-            stateList.Add(new State("Michigan", 0.5));
-            stateList.Add(new State("Montana", 0.5));
-            stateList.Add(new State("Nevada", 0.5));
-            stateList.Add(new State("New Jersey", 0.5));
-            stateList.Add(new State("New Mexico", 0.5));
-            stateList.Add(new State("South Carolina", 0.5));
+            stateList.Add(new State("Alaska", 0.0));
+            stateList.Add(new State("California", 0.075));
+            stateList.Add(new State("Kentucky", 0.06));
+            stateList.Add(new State("Maine", 0.055));
+            stateList.Add(new State("Michigan", 0.06));
+            stateList.Add(new State("Montana", 0.0));
+            stateList.Add(new State("Nevada", 0.0685));
+            stateList.Add(new State("New Jersey", 0.07));
+            stateList.Add(new State("New Mexico", 0.05125));
+            stateList.Add(new State("South Carolina", 0.05));
 
+            productList.Add(new Product(0, "Spodnie", 30, -1));
+            productList.Add(new Product(1, "APAP", 4, -1));
+            productList.Add(new Product(2, "AspirynaMax", 10, -1));
+            productList.Add(new Product(3, "Ziemniak", 1, -1));
+            productList.Add(new Product(4, "Pampuchy", 3, -1));
+            productList.Add(new Product(5, "Pomidor", 2, -1));
+            productList.Add(new Product(6, "T-shirt", 15, -1));
+            productList.Add(new Product(7, "Nospa", 6, -1));
+            productList.Add(new Product(8, "Pierogi", 5, -1));
+            productList.Add(new Product(9, "Witaminex", 30, -1));
         }
 
         /**

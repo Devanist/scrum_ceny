@@ -12,7 +12,7 @@ namespace SalesTaxesUSA
         String name { get; set; }
         float basePrice { get; set; }
         float endPrice { get; set; }
-        ProductCategory productCategory { get; set; }
+        //ProductCategory productCategory { get; set; }
 
         public Product(int id, String name, float basePrice, float endPrice)
         {
