@@ -88,13 +88,18 @@ namespace SalesTaxesUSA
             product = productList[1];
             foreach (var element in productList)
             {
-                if(productComboBox.SelectedValue == element.name)
+                if (productComboBox.SelectedValue == element.name)
                 {
                     product = element;
                 }
                 //stateComboBox.Items.Add(element.name);
             }
             basePriceTextBox.Text = product.basePrice.ToString();
+        }
+
+        private void finalPriceTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //basePriceTextBox.Text = calculatePrice(-1, Convert.ToDouble(finalPriceTextBox.Text), baseTax, categoryTax).ToString()
         }
     }
 }
